@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:design="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+	BindingContext="{x:Static design:ViewModelLocator.designViewModel}"
+	x:Class="SI.Views.Sink"
+	BackgroundColor="#DFDFDF"
+	Padding="10">
+
+	
+
+	<ContentView.Content>
+		<StackLayout Spacing="10">
+			<Label 
+				Style="{StaticResource AccentColor}"
+				Text="AccentColor"
+        	/>  
+			<Label 
+				Text="Line 2"
+        	/>  
+		</StackLayout>
+    </ContentView.Content>
+       
+		
+
+
+		
+
+
+</ContentView>

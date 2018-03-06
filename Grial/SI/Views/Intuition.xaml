@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:artina="clr-namespace:UXDivers.Artina.Shared;assembly=UXDivers.Artina.Shared"
+	xmlns:design="clr-namespace:UXDivers.Artina.Grial;assembly=UXDivers.Artina.Grial"
+  	xmlns:templates="clr-namespace:SI.Views.Templates;assembly=UXDivers.Artina.Grial"
+	BindingContext="{x:Static design:ViewModelLocator.designViewModel}"
+	x:Class="SI.Views.Intuition"
+	BackgroundColor="#DFDFDF"
+		Padding="10"
+	>
+
+	<ContentView.Content>
+
+	<StackLayout>
+
+		<Grid>
+			<Grid.RowDefinitions>
+				<!-- Header row name visibility bar -->
+				<RowDefinition Height="1*" />
+				<!-- Header row timestamp -->
+				<RowDefinition Height="1*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+	 			<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+	 		</Grid.ColumnDefinitions>
+	        <artina:CircleImage 
+	            Source="{ Binding intuitionDto.intuition.user.imageInfo.secureUrl }" 
+				Style="{ StaticResource AvatarLarge }"
+	            Grid.Row="0"
+	            Grid.Column="0"
+	            Grid.RowSpan="2"
+	            HorizontalOptions="Start" 
+	            VerticalOptions="Start"
+	        />
+	 		<Label 
+	            Text="{ Binding intuitionDto.intuition.user.fullName }" 
+				FontSize="18"
+	            Grid.Row="0" 
+	            Grid.Column="1" 
+				Grid.ColumnSpan="2"
+				VerticalOptions="Center"
+	        />
+	 		<Label 
+	            Text="{ Binding intuitionDto.intuition.visibility,
+	                    Converter={StaticResource titleCaseConverter }}" 
+				FontSize="14"
+	            Grid.Row="0" 
+	            Grid.Column="3" 
+				HorizontalOptions="End"
+				VerticalOptions="Center"
+	        />
+	 		<Label 
+	            Text="{ Binding intuitionDto.postPrettyTimestamp }" 
+				FontSize="12"
+	            Grid.Row="1" 
+	            Grid.Column="1" 
+				Grid.ColumnSpan="2"
+	        />
+		 	<Label 
+	            FontSize="11"
+	            Grid.Row="1" 
+	            Grid.Column="2" 
+				Grid.ColumnSpan="2"
+	            HorizontalOptions="End"
+				Text="{Binding intuitionDto.expirationPrettyTimestamp, 
+						StringFormat='Expires {0}' }"
+				IsVisible="{Binding Path=intuitionDto.active }"
+	        />
+		 	<Label 
+	            FontSize="11"
+	            Grid.Row="1" 
+	            Grid.Column="2" 
+				Grid.ColumnSpan="2"
+	            HorizontalOptions="End"
+				Text="{Binding intuitionDto.expirationPrettyTimestamp, 
+						StringFormat='Expired {0}' }"
+				IsVisible="{Binding Path=intuitionDto.active,
+	                    Converter={StaticResource negateBoolConverter }}"
+	        />
+		</Grid>
+
+		<Label 
+			Text="{Binding intuitionDto.intuition.intuitionText }"
+			Margin="20, 10, 10, 10"
+	        FontSize="20"
+			HorizontalOptions="CenterAndExpand"
+	    />	
+
+		<Label 
+			Text="{Binding intuitionDto.intuition.user.fullName,
+					StringFormat='-- {0}' }"
+	        FontSize="16"
+			FontAttributes="Italic"
+			Margin="0, 0, 10, 10"
+			HorizontalOptions="EndAndExpand"
+	    />
+
+			<templates:Prediction />
+					
+
+
+			
+	</StackLayout>
+
+
+	</ContentView.Content>  
+	
+
+</ContentView>

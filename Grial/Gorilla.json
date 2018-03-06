@@ -1,0 +1,13 @@
+{
+	"knownAssemblies": [
+		{
+			"name": "UXDivers.Artina.Shared",
+			"types": null
+		}
+        ,
+		{
+			"name": "UXDivers.Artina.Grial",
+			"types": null
+		}
+	]
+}

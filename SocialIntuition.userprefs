@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{45DA7B47-C579-4BC1-B1E5-97EEA0C669CD}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grial/Views/Articles/ArticlesListVariantPage.xaml_ORIG.cs">
+    <Files>
+<<<<<<< HEAD
+      <File FileName="Grial/ViewModel/PostsViewModel.cs" Line="11" Column="28" />
+      <File FileName="Grial/Models/SampleData.cs" Line="85" Column="29" />
+      <File FileName="Grial/Views/Articles/ArticlesListVariantPage.xaml.cs" Line="7" Column="22" />
+      <File FileName="Grial/Views/Articles/ArticlesListVariantPage.xaml_ORIG.cs" Line="1" Column="1" />
+=======
+      <File FileName="Grial/SI/Data/intuition.json" Line="200" Column="37" />
+      <File FileName="si-app-mobile Status" />
+>>>>>>> b01fe795a07a254709f2a981b38ac4c045d2071b
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+<<<<<<< HEAD
+          <Node name="SocialIntuition" expanded="True">
+            <Node name="SocialIntuition" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModel" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Articles" expanded="True">
+                  <Node name="ArticlesListVariantPage.xaml" expanded="True" />
+                  <Node name="ArticlesListVariantPage_ORIG.xaml" expanded="True">
+                    <Node name="ArticlesListVariantPage.xaml_ORIG.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="SocialIntuition.iOS" expanded="True" />
+          </Node>
+=======
+          <Node name="SocialIntuition" selected="True" />
+>>>>>>> b01fe795a07a254709f2a981b38ac4c045d2071b
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/willstevens/dev/repos/si-app-mobile/Grial/Views/Articles/ArticlesListVariantPage.xaml.cs" line="46" column="1" />
+      <Breakpoint file="/Users/willstevens/dev/repos/si-app-mobile/Grial/SI/Views/Intuition.xaml" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SocialIntuition.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.98254814-0143-48F8-87D2-96A989F01DFF" />
+  <MonoDevelop.Ide.ItemProperties.SocialIntuition.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 10 (KitKat)" />
+</Properties>
